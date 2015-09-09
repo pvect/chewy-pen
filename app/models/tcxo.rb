@@ -1,0 +1,2 @@
+class TCXO < Product
+end

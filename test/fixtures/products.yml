@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  title: MyString
+  notes: MyString
+  size: MyString
+  fmin: 1.5
+  fmax: 1.5
+  output: MyString
+
+two:
+  type: 
+  title: MyString
+  notes: MyString
+  size: MyString
+  fmin: 1.5
+  fmax: 1.5
+  output: MyString

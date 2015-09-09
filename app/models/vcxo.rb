@@ -1,0 +1,2 @@
+class VCXO < Product
+end

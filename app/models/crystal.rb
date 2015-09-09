@@ -1,0 +1,2 @@
+class Crystal < Product
+end

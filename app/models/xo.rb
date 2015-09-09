@@ -1,0 +1,3 @@
+class XO < Product
+    
+end
