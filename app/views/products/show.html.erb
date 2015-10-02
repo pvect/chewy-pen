@@ -1,7 +1,8 @@
-<h1>Hi, I'm a <%= @type %>.</h1>
-<p>My name is <%= @name %> </p>
+<h1><%= @name %></h1>
+<h2>Type: <%= @type %></h2>
 
-<h2>Here is some information</h2>
+<h3>Here is some information</h3>
+
 <ul>
     <li>Notes: <%= @product.notes %></li>
     <li>Size: <%= @product.size %></li>
@@ -9,3 +10,5 @@
     <li>fmax: <%= @product.fmax %></li>
     <li>Output: <%= @product.output %></li>
 </ul>
+
+<p>Everthing you need to know about this product could in theory be listed right here</p>
