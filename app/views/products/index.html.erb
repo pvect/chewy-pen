@@ -1,34 +1,38 @@
-<h1>Products</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Title</th>
-      <th>Notes</th>
-      <th>Size</th>
-      <th>fmin</th>
-      <th>fmax</th>
-      <th>Output</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-</thead>
-  <tbody>
-    <% @products.each do |product| %>
+<div class="container">
+  <table>
+    <thead>
       <tr>
-        <td><%= product.type %></td>
-        <td><%= product.title %></td>
-        <td><%= product.notes %></td>
-        <td><%= product.size %></td>
-        <td><%= product.fmin %></td>
-        <td><%= product.fmax %></td>
-        <td><%= product.output %></td>
-        <td><%= link_to 'Show', sti_product_path(product.type, product) %></td>
-        <td><%= link_to 'Edit', "" %></td>
-        <td><%= link_to 'Destroy', "", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Type</th>
+        <th>Title</th>
+        <th>Notes</th>
+        <th>Size</th>
+        <th>fmin</th>
+        <th>fmax</th>
+        <th>Output</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+  </thead>
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.type %></td>
+          <td><%= product.title %></td>
+          <td><%= product.notes %></td>
+          <td><%= product.size %></td>
+          <td><%= product.fmin %></td>
+          <td><%= product.fmax %></td>
+          <td><%= product.output %></td>
+          <td><%= link_to "See all #{product.type.pluralize}", sti_product_path(product.type) %></td>
+          <td><%= link_to 'Show', sti_product_path(product.type, product) %></td>
+          <td><%= link_to 'Edit', "" %></td>
+          <td><%= link_to 'Destroy', "", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+
